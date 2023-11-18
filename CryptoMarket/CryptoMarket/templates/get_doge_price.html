@@ -1,0 +1,18 @@
+<!-- get_doge_price.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Price</title>
+</head>
+<body>
+    <h1>Dogecoin Price:</h1>
+    {% if cena_dogecoin %}
+        <p>{{ cena_dogecoin }}</p>
+    {% else %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>

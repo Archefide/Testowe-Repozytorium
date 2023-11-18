@@ -17,6 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# myapp/urls.py
+from django.urls import path
+from . import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.default_view, name='default_view'),
+    path('get_doge_price/', views.get_doge_price, name='get_doge_price'),
+
+    # other paths...
 ]
